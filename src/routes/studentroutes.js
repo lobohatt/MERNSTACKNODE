@@ -23,7 +23,7 @@ try{
   }
  });
 
- router.get('/userprofile',auth, async(req,res)=>{
+ router.post('/userprofile',auth, async(req,res)=>{
 
   try{
    res.send(req.user);
