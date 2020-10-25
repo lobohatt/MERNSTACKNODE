@@ -17,7 +17,7 @@ try{
  });
 
  await req.user.save();
- res.send('Logout Successful');
+ res.send({success: true,message:'Logout Successful'});
   }catch(e){
  res.status(500).send();
   }
